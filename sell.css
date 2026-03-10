@@ -1,0 +1,127 @@
+/* === Sell Page === */
+
+.sell-main {
+  padding-top: calc(var(--navbar-height) + 60px);
+  padding-bottom: 100px;
+  min-height: 100vh;
+  background: var(--bg);
+}
+
+.sell-form-container {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+/* Form Styles */
+.sell-form {
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: var(--shadow-lg);
+}
+
+.sell-form .section__title {
+  margin-bottom: 32px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.form-group {
+  margin-bottom: 24px;
+}
+
+.form-label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--text);
+}
+
+.char-counter {
+  float: right;
+  font-weight: 500;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.char-counter.warning {
+  color: var(--warning);
+}
+
+.char-counter.valid {
+  color: var(--success);
+}
+
+.error-message {
+  min-height: 22px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.input-error {
+  border-color: var(--error) !important;
+}
+
+.submit-btn {
+  width: 100%;
+  margin-top: 16px;
+  padding: 16px;
+  font-size: 1rem;
+}
+
+/* Success Message */
+.success-message {
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 80px 40px;
+  text-align: center;
+  box-shadow: var(--shadow-lg);
+}
+
+.success-icon {
+  font-size: 5rem;
+  margin-bottom: 24px;
+}
+
+.success-message h2 {
+  font-size: 1.75rem;
+  margin-bottom: 14px;
+  color: var(--text);
+}
+
+.success-message p {
+  color: var(--grey);
+  font-size: 1.05rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .sell-form {
+    padding: 28px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .sell-form-container {
+    padding: 0 16px;
+  }
+  
+  .sell-form {
+    padding: 24px;
+  }
+  
+  .success-message {
+    padding: 60px 24px;
+  }
+}
+

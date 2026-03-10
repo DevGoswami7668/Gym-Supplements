@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SuppleFuel - Premium Gym Supplements</title>
+  <link rel="stylesheet" href="global.css">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar__container">
+      <a href="index.html" class="navbar__logo">💪 SuppleFuel</a>
+      <div class="navbar__hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="navbar__links" id="navLinks">
+        <li><a href="index.html" class="navbar__link navbar__link--active">Home</a></li>
+        <li><a href="shop.html" class="navbar__link">Shop</a></li>
+        <li><a href="guides.html" class="navbar__link">Guides</a></li>
+        <li><a href="sell.html" class="navbar__link">Sell</a></li>
+        <li><a href="contact.html" class="navbar__link">Contact</a></li>
+        <li class="navbar__cart" id="cartIcon">
+          <span class="navbar__cart-icon">🛒</span>
+          <span class="navbar__cart-badge" id="cartBadge">0</span>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero__content fade-in">
+          <h1 class="hero__title">Fuel Your Goals.</h1>
+          <p class="hero__subtitle">Premium supplements for every fitness goal. Build stronger, recover faster, and achieve more.</p>
+          <div class="hero__buttons">
+            <a href="shop.html" class="btn-primary">Shop Now</a>
+            <a href="guides.html" class="btn-outline">View Guides</a>
+          </div>
+        </div>
+        <div class="hero__decoration">
+          <span class="hero__dot"></span>
+          <span class="hero__dot"></span>
+          <span class="hero__dot"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Goal Cards Section -->
+    <section class="section goals-section">
+      <div class="container">
+        <h2 class="section__title">What Is Your Goal?</h2>
+        <div class="goals__grid">
+          <a href="shop.html?goal=muscle-gain" class="goal-card card" data-goal="muscle-gain">
+            <div class="goal-card__icon">💪</div>
+            <h3 class="goal-card__title">Muscle Gain</h3>
+            <p class="goal-card__desc">Build lean muscle mass with premium protein and creatine supplements.</p>
+            <span class="goal-card__link">Shop →</span>
+          </a>
+          <a href="shop.html?goal=fat-loss" class="goal-card card" data-goal="fat-loss">
+            <div class="goal-card__icon">🔥</div>
+            <h3 class="goal-card__title">Fat Loss</h3>
+            <p class="goal-card__desc">Burn fat effectively with thermogenic and metabolism-boosting formulas.</p>
+            <span class="goal-card__link">Shop →</span>
+          </a>
+          <a href="shop.html?goal=endurance" class="goal-card card" data-goal="endurance">
+            <div class="goal-card__icon">🏃</div>
+            <h3 class="goal-card__title">Endurance</h3>
+            <p class="goal-card__desc">Push harder and longer with energy-supporting and endurance formulas.</p>
+            <span class="goal-card__link">Shop →</span>
+          </a>
+          <a href="shop.html?goal=recovery" class="goal-card card" data-goal="recovery">
+            <div class="goal-card__icon">🔄</div>
+            <h3 class="goal-card__title">Recovery</h3>
+            <p class="goal-card__desc">Recover faster with amino acids and muscle repair support.</p>
+            <span class="goal-card__link">Shop →</span>
+          </a>
+          <a href="shop.html?goal=energy" class="goal-card card" data-goal="energy">
+            <div class="goal-card__icon">⚡</div>
+            <h3 class="goal-card__title">Energy</h3>
+            <p class="goal-card__desc">Boost energy and focus for intense pre-workout performance.</p>
+            <span class="goal-card__link">Shop →</span>
+          </a>
+          <a href="shop.html?goal=general-health" class="goal-card card" data-goal="general-health">
+            <div class="goal-card__icon">🛡️</div>
+            <h3 class="goal-card__title">General Health</h3>
+            <p class="goal-card__desc">Essential vitamins and minerals for overall wellness and vitality.</p>
+            <span class="goal-card__link">Shop →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Daily Tracker Widget -->
+    <section class="section tracker-section">
+      <div class="container">
+        <div class="tracker fade-in">
+          <h2 class="section__title">Today's Supplement Checklist</h2>
+          <div class="tracker__progress">
+            <div class="tracker__bar">
+              <div class="tracker__bar-fill" id="trackerBarFill"></div>
+            </div>
+            <p class="tracker__count"><span id="trackerCount">0</span> / 8 taken today</p>
+          </div>
+          <div class="tracker__list">
+            <label class="tracker__item">
+              <input type="checkbox" data-supplement="whey-protein" class="tracker-checkbox">
+              <span class="tracker__item-text">Whey Protein</span>
+            </label>
+            <label class="tracker__item">
+              <input type="checkbox" data-supplement="creatine" class="tracker-checkbox">
+              <span class="tracker__item-text">Creatine</span>
+            </label>
+            <label class="tracker__item">
+              <input type="checkbox" data-supplement="multivitamin" class="tracker-checkbox">
+              <span class="tracker__item-text">Multivitamin</span>
+            </label>
+            <label class="tracker__item">
+              <input type="checkbox" data-supplement="fish-oil" class="tracker-checkbox">
+              <span class="tracker__item-text">Fish Oil</span>
+            </label>
+            <label class="tracker__item">
+              <input type="checkbox" data-supplement="vitamin-d" class="tracker-checkbox">
+              <span class="tracker__item-text">Vitamin D</span>
+            </label>
+            <label class="tracker__item">
+              <input type="checkbox" data-supplement="pre-workout" class="tracker-checkbox">
+              <span class="tracker__item-text">Pre-Workout</span>
+            </label>
+            <label class="tracker__item">
+              <input type="checkbox" data-supplement="bcaas" class="tracker-checkbox">
+              <span class="tracker__item-text">BCAAs</span>
+            </label>
+            <label class="tracker__item">
+              <input type="checkbox" data-supplement="magnesium" class="tracker-checkbox">
+              <span class="tracker__item-text">Magnesium</span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Supplement Comparison Tool -->
+    <section class="section comparison-section">
+      <div class="container">
+        <h2 class="section__title">Compare Two Supplements</h2>
+        <div class="comparison fade-in">
+          <div class="comparison__controls">
+            <select id="compareSelect1" class="comparison__select">
+              <option value="">Select first supplement...</option>
+            </select>
+            <select id="compareSelect2" class="comparison__select">
+              <option value="">Select second supplement...</option>
+            </select>
+            <button id="compareBtn" class="btn-primary">Compare</button>
+          </div>
+          <div id="compareError" class="error-message" style="display: none;"></div>
+          <div id="compareTable" class="comparison__table" style="display: none;">
+            <!-- Table rendered by JS -->
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__col">
+          <h3 class="footer__title">About SuppleFuel</h3>
+          <p class="footer__text">Your trusted source for premium gym supplements. We help you achieve your fitness goals with quality products and expert guidance.</p>
+        </div>
+        <div class="footer__col">
+          <h3 class="footer__title">Quick Links</h3>
+          <ul class="footer__links">
+            <li><a href="index.html" class="footer__link">Home</a></li>
+            <li><a href="shop.html" class="footer__link">Shop</a></li>
+            <li><a href="guides.html" class="footer__link">Guides</a></li>
+            <li><a href="sell.html" class="footer__link">Sell</a></li>
+            <li><a href="contact.html" class="footer__link">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h3 class="footer__title">Contact Info</h3>
+          <div class="footer__contact-item">📧 support@supplefuel.com</div>
+          <div class="footer__contact-item">📞 1-800-SUPPLE</div>
+          <div class="footer__contact-item">📍 123 Fitness St, Gym City</div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2024 SuppleFuel. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Cart Sidebar -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-sidebar" id="cartSidebar">
+    <div class="cart-sidebar__header">
+      <h2 class="cart-sidebar__title">Your Cart</h2>
+      <button class="cart-sidebar__close" id="cartClose">&times;</button>
+    </div>
+    <div class="cart-sidebar__content" id="cartContent">
+      <p class="cart-empty">Your cart is empty</p>
+    </div>
+    <div class="cart-sidebar__footer">
+      <div class="cart-promo">
+        <input type="text" id="promoCode" placeholder="Promo code">
+        <button class="btn-outline" id="applyPromo">Apply</button>
+      </div>
+      <div id="promoError" class="error-message" style="display: none;"></div>
+      <div class="cart-totals">
+        <div class="cart-totals__row">
+          <span>Subtotal</span>
+          <span id="cartSubtotal">$0.00</span>
+        </div>
+        <div class="cart-totals__row cart-totals__row--discount" id="discountRow" style="display: none;">
+          <span>Discount</span>
+          <span id="cartDiscount">-$0.00</span>
+        </div>
+        <div class="cart-totals__row cart-totals__row--total">
+          <span>Total</span>
+          <span id="cartTotal">$0.00</span>
+        </div>
+      </div>
+      <div class="cart-actions">
+        <button class="btn-primary" id="checkoutBtn">Checkout</button>
+        <button class="btn-outline" id="clearCartBtn">Clear Cart</button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTop">↑</button>
+
+  <!-- Toast Container -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - SuppleFuel</title>
+  <link rel="stylesheet" href="global.css">
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar__container">
+      <a href="index.html" class="navbar__logo">💪 SuppleFuel</a>
+      <div class="navbar__hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="navbar__links" id="navLinks">
+        <li><a href="index.html" class="navbar__link">Home</a></li>
+        <li><a href="shop.html" class="navbar__link">Shop</a></li>
+        <li><a href="guides.html" class="navbar__link">Guides</a></li>
+        <li><a href="sell.html" class="navbar__link">Sell</a></li>
+        <li><a href="contact.html" class="navbar__link navbar__link--active">Contact</a></li>
+        <li class="navbar__cart" id="cartIcon">
+          <span class="navbar__cart-icon">🛒</span>
+          <span class="navbar__cart-badge" id="cartBadge">0</span>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="contact-main">
+    <div class="container">
+      <h1 class="section__title">Contact Us</h1>
+
+      <div class="contact-grid">
+        <!-- Contact Form -->
+        <div class="contact-form-container">
+          <div id="contactFormWrapper">
+            <form id="contactForm" class="contact-form">
+              <div class="form-group">
+                <label for="fullName" class="form-label">Full Name *</label>
+                <input type="text" id="fullName" name="fullName" placeholder="John Doe">
+                <p class="error-message" id="fullNameError"></p>
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="form-label">Email *</label>
+                <input type="email" id="email" name="email" placeholder="john@example.com">
+                <p class="error-message" id="emailError"></p>
+              </div>
+
+              <div class="form-group">
+                <label for="subject" class="form-label">Subject *</label>
+                <select id="subject" name="subject">
+                  <option value="">Select a subject</option>
+                  <option value="Order Issue">Order Issue</option>
+                  <option value="Product Question">Product Question</option>
+                  <option value="General Enquiry">General Enquiry</option>
+                </select>
+                <p class="error-message" id="subjectError"></p>
+              </div>
+
+              <div class="form-group">
+                <label for="message" class="form-label">Message *</label>
+                <textarea id="message" name="message" placeholder="How can we help you?"></textarea>
+                <p class="error-message" id="messageError"></p>
+              </div>
+
+              <button type="submit" class="btn-primary submit-btn">Send Message</button>
+            </form>
+          </div>
+
+          <!-- Success Message -->
+          <div id="contactSuccess" class="success-message" style="display: none;">
+            <div class="success-icon">✅</div>
+            <h2>Message received!</h2>
+            <p>We'll reply within 24 hours.</p>
+          </div>
+        </div>
+
+        <!-- Support Info -->
+        <div class="support-info">
+          <h2 class="support-info__title">Support Hours</h2>
+          <div class="support-info__hours">
+            <div class="support-info__row">
+              <span>Monday - Friday</span>
+              <span>9am - 6pm EST</span>
+            </div>
+            <div class="support-info__row">
+              <span>Saturday</span>
+              <span>10am - 4pm EST</span>
+            </div>
+            <div class="support-info__row">
+              <span>Sunday</span>
+              <span>Closed</span>
+            </div>
+          </div>
+
+          <h2 class="support-info__title">Contact Details</h2>
+          <div class="support-info__details">
+            <div class="support-info__item">
+              <span class="support-info__icon">📧</span>
+              <span>support@supplefuel.com</span>
+            </div>
+            <div class="support-info__item">
+              <span class="support-info__icon">📞</span>
+              <span>1-800-SUPPLE</span>
+            </div>
+          </div>
+
+          <div class="map-placeholder">
+            <p>Paste your Google Maps iframe here</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ Section -->
+      <section class="faq-section">
+        <h2 class="section__title">Frequently Asked Questions</h2>
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-item__question">
+              <span>Are all supplements on the site genuine?</span>
+              <span class="faq-item__chevron">▼</span>
+            </button>
+            <div class="faq-item__answer">
+              <p>Yes, 100%. We only source directly from authorized manufacturers and distributors. Every product is guaranteed authentic.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-item__question">
+              <span>How do I know which supplement suits my goal?</span>
+              <span class="faq-item__chevron">▼</span>
+            </button>
+            <div class="faq-item__answer">
+              <p>Check our Guides section for detailed information, or use our comparison tool on the home page. You can also filter by goal in our shop.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-item__question">
+              <span>Can I return or refund a purchase?</span>
+              <span class="faq-item__chevron">▼</span>
+            </button>
+            <div class="faq-item__answer">
+              <p>Yes, we offer a 30-day return policy for unopened products. Contact our support team to initiate a return.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-item__question">
+              <span>How do I list a supplement for sale?</span>
+              <span class="faq-item__chevron">▼</span>
+            </button>
+            <div class="faq-item__answer">
+              <p>Use our Sell page to submit a listing. Fill in the product details, upload a photo, and our team will review it within 24 hours.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-item__question">
+              <span>What does the promo code SAVE10 give me?</span>
+              <span class="faq-item__chevron">▼</span>
+            </button>
+            <div class="faq-item__answer">
+              <p>SAVE10 gives you 10% off your entire order. Enter it in the cart and click Apply to redeem.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-item__question">
+              <span>How does the daily tracker reset work?</span>
+              <span class="faq-item__chevron">▼</span>
+            </button>
+            <div class="faq-item__answer">
+              <p>The tracker saves your progress by date. It automatically resets each new day so you can start fresh.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__col">
+          <h3 class="footer__title">About SuppleFuel</h3>
+          <p class="footer__text">Your trusted source for premium gym supplements. We help you achieve your fitness goals with quality products.</p>
+        </div>
+        <div class="footer__col">
+          <h3 class="footer__title">Quick Links</h3>
+          <ul class="footer__links">
+            <li><a href="index.html" class="footer__link">Home</a></li>
+            <li><a href="shop.html" class="footer__link">Shop</a></li>
+            <li><a href="guides.html" class="footer__link">Guides</a></li>
+            <li><a href="sell.html" class="footer__link">Sell</a></li>
+            <li><a href="contact.html" class="footer__link">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h3 class="footer__title">Contact Info</h3>
+          <div class="footer__contact-item">📧 support@supplefuel.com</div>
+          <div class="footer__contact-item">📞 1-800-SUPPLE</div>
+          <div class="footer__contact-item">📍 123 Fitness St, Gym City</div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2024 SuppleFuel. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Cart Sidebar -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-sidebar" id="cartSidebar">
+    <div class="cart-sidebar__header">
+      <h2 class="cart-sidebar__title">Your Cart</h2>
+      <button class="cart-sidebar__close" id="cartClose">&times;</button>
+    </div>
+    <div class="cart-sidebar__content" id="cartContent">
+      <p class="cart-empty">Your cart is empty</p>
+    </div>
+    <div class="cart-sidebar__footer">
+      <div class="cart-promo">
+        <input type="text" id="promoCode" placeholder="Promo code">
+        <button class="btn-outline" id="applyPromo">Apply</button>
+      </div>
+      <div id="promoError" class="error-message" style="display: none;"></div>
+      <div class="cart-totals">
+        <div class="cart-totals__row">
+          <span>Subtotal</span>
+          <span id="cartSubtotal">$0.00</span>
+        </div>
+        <div class="cart-totals__row cart-totals__row--discount" id="discountRow" style="display: none;">
+          <span>Discount</span>
+          <span id="cartDiscount">-$0.00</span>
+        </div>
+        <div class="cart-totals__row cart-totals__row--total">
+          <span>Total</span>
+          <span id="cartTotal">$0.00</span>
+        </div>
+      </div>
+      <div class="cart-actions">
+        <button class="btn-primary" id="checkoutBtn">Checkout</button>
+        <button class="btn-outline" id="clearCartBtn">Clear Cart</button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTop">↑</button>
+
+  <!-- Toast Container -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
